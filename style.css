@@ -1,0 +1,499 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    min-height:100vh;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+/* ===========================
+   DIFFERENT BACKGROUND
+=========================== */
+
+.home{
+    background-image:url("images/college.jpg");
+}
+
+.about{
+    background-image:url("images/students.jpg");
+}
+
+.courses{
+    background-image:url("images/campus.jpg");
+}
+
+.facilities{
+    background-image:url("images/lab.jpg");
+}
+
+.events{
+    background-image:url("images/events.jpg");
+}
+
+.contact{
+    background-image:url("images/contact.jpg");
+}
+
+/* ===========================
+   DARK OVERLAY
+=========================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    z-index:-1;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 70px;
+    background:rgba(0,0,0,0.45);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:60px;
+    margin-right:10px;
+}
+
+.logo h2{
+    color:white;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+.active{
+    color:#00ccff;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:70vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:70%;
+    font-size:22px;
+    line-height:1.7;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#0099ff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#0099ff;
+}
+
+/* ===========================
+   PAGE TITLE
+=========================== */
+
+.page-title{
+    color:white;
+    text-align:center;
+    font-size:55px;
+    margin:40px 0;
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.content{
+    width:90%;
+    margin:auto;
+    padding:30px;
+    color:white;
+    text-align:center;
+}
+
+.content h2{
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.content p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+.content ul{
+    list-style:none;
+}
+
+.content li{
+    margin:10px 0;
+    font-size:20px;
+}
+
+/* ===========================
+   FEATURES
+=========================== */
+
+.features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:50px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    width:300px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,0.18);
+
+    border-radius:15px;
+
+    color:white;
+
+    backdrop-filter:blur(8px);
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    background:#0099ff;
+}
+
+.card h2{
+
+    margin-bottom:15px;
+}
+
+.card p{
+
+    font-size:18px;
+
+    line-height:1.6;
+}
+
+/* ===========================
+   COURSE
+=========================== */
+
+.course-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+}
+
+.course{
+
+    width:270px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    border-radius:15px;
+
+    backdrop-filter:blur(8px);
+
+    transition:.4s;
+}
+
+.course:hover{
+
+    transform:translateY(-10px);
+
+    background:#0099ff;
+}
+
+/* ===========================
+   FACILITY
+=========================== */
+
+.facility{
+
+    margin-bottom:25px;
+}
+
+/* ===========================
+   EVENT
+=========================== */
+
+.event{
+
+    width:280px;
+
+    margin:15px auto;
+
+    padding:20px;
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    border-radius:15px;
+
+    backdrop-filter:blur(8px);
+}
+
+/* ===========================
+   CONTACT FORM
+=========================== */
+
+.contact-form{
+
+    width:60%;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.20);
+
+    color:white;
+
+    outline:none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+
+    color:white;
+}
+
+.contact-form button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#0099ff;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.contact-form button:hover{
+
+    background:white;
+
+    color:#0099ff;
+}
+
+/* ===========================
+   GALLERY
+=========================== */
+
+.gallery{
+
+    padding:60px;
+
+    color:white;
+
+    text-align:center;
+}
+
+.gallery h1{
+
+    margin-bottom:30px;
+
+    font-size:45px;
+}
+
+.gallery-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:20px;
+}
+
+.gallery-container img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    transition:.4s;
+}
+
+.gallery-container img:hover{
+
+    transform:scale(1.05);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    color:white;
+
+    background:rgba(0,0,0,.5);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+
+    flex-direction:column;
+}
+
+nav ul{
+
+    flex-direction:column;
+
+    margin-top:20px;
+}
+
+nav ul li{
+
+    margin:10px 0;
+}
+
+.hero h1{
+
+    font-size:38px;
+}
+
+.hero p{
+
+    width:95%;
+
+    font-size:18px;
+}
+
+.features{
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.contact-form{
+
+    width:95%;
+}
+
+}
